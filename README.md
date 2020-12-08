@@ -17,3 +17,19 @@ A CIF provides the business with a summary of all of the activities associated w
 
 Commercial banking uses CIFs to show the various credit products such as business loans and credit cards currently in use by a customer. The CIF may also display information regarding any previous inquiries, to help provide targeted information for the purpose of cross-selling, which is offering complementary products to existing clients.
 
+### CIF and Data Security
+
+Any business or entity that records certain customer information is required to disclose how it is collected and how it will be used. Also, the business is required to take certain minimum steps to protect the data from accidental or forced exposure by unauthorized parties.
+
+The Federal Trade Commission helps to protect consumers and businesses by regulating how data is to be secured in the U.S. The FTC also provides help for companies on keeping data secure and ensuring that data is disposed of properly.
+
+## Special Considerations
+
+A customer information file (CIF) and its data are often used as a marketing tool. For example, a CIF with online retailers might include information on previous web searches, previously viewed products, and purchases. The search and browsing behavior helps online companies determine other items that might interest the customer to solicit new or additional sales.
+
+Service providers also maintain CIFs for the purpose of future marketing. This can include notices to a consumer about services the consumer uses at specific intervals, such as vehicle maintenance or landscaping services. By gathering information on when service was last used, the company can anticipate when the customer may need it in the future and send a reminder.
+
+## Example of a Customer Information File
+
+A CIF often contains personally identifiable information (PII). This can include the customer’s name, address, and phone number for the purposes of fulfilling purchases. A CIF can also include a person's birth date and Social Security number, which is more often required in banking or in circumstances in which credit is relevant. Further information, such as race and gender, may also be included in the information is available.
+
