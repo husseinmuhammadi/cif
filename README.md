@@ -1,2 +1,3 @@
-# cif
-Customer Information File
+# Customer Information File (CIF)
+## What Is a Customer Information File (CIF)?
+A customer information file (CIF) is an electronic file that stores all pertinent information about a customer's personal and account information. The customer information file (CIF), which contains a CIF number, allows the business to view its customer accounts by relationship and not strictly by account type. Although many industries have customer files, CIFs have been traditionally associated with the banking industry. A CIF at a bank might include a client's credit relationships, accounts owned, and ownership information.
