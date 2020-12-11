@@ -10,14 +10,8 @@ public class Product extends EntityBase {
     @Column(name = "NAME", length = 200)
     private String name;
 
-    @Column(name = "BARCODE")
-    private String code;
-
     @Column(name = "AMOUNT")
     private Double amount;
-
-    @Column(name = "CURRENCY")
-    private String currency;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id", foreignKey = @ForeignKey(name = "FK_PRODUCT_CATEGORY_PRODUCT"))
@@ -31,28 +25,12 @@ public class Product extends EntityBase {
         this.name = name;
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
     public Double getAmount() {
         return amount;
     }
 
     public void setAmount(Double amount) {
         this.amount = amount;
-    }
-
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
     }
 
     public ProductCategory getCategory() {
