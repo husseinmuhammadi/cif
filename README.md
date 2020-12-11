@@ -33,3 +33,5 @@ Service providers also maintain CIFs for the purpose of future marketing. This c
 
 A CIF often contains personally identifiable information (PII). This can include the customer’s name, address, and phone number for the purposes of fulfilling purchases. A CIF can also include a person's birth date and Social Security number, which is more often required in banking or in circumstances in which credit is relevant. Further information, such as race and gender, may also be included in the information is available.
 
+## About This Project
+
