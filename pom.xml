@@ -17,9 +17,13 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>ui</module>
-        <module>batch</module>
-        <module>restful</module>
+        <module>repository</module>
+        <module>logger</module>
+        <!--        <module>api</module>-->
+        <!--        <module>service</module>-->
+        <!--        <module>restful</module>-->
+        <!--        <module>ui</module>-->
+        <!--        <module>batch</module>-->
     </modules>
 
     <properties>
@@ -54,6 +58,16 @@
         </plugins>
     </build>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>ir.isc.cif</groupId>
+                <artifactId>logger</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -62,6 +76,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ir.isc.cif</groupId>
+            <artifactId>logger</artifactId>
         </dependency>
     </dependencies>
 </project>
