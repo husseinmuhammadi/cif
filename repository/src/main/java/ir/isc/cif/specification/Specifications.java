@@ -1,4 +1,4 @@
-package ir.isc.cif.repository.specification;
+package ir.isc.cif.specification;
 
 import org.springframework.util.Assert;
 

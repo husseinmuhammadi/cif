@@ -1,6 +1,7 @@
 package ir.isc.cif.repository.to;
 
 import ir.isc.cif.common.CifNumber;
+import ir.isc.cif.to.CustomerInformationFile;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

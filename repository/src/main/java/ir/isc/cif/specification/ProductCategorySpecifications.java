@@ -1,7 +1,7 @@
-package ir.isc.cif.repository.specification;
+package ir.isc.cif.specification;
 
-import ir.isc.cif.repository.to.ProductCategory;
-import ir.isc.cif.repository.to.ProductCategory_;
+import ir.isc.cif.to.ProductCategory;
+import ir.isc.cif.to.ProductCategory_;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.jpa.domain.Specification;

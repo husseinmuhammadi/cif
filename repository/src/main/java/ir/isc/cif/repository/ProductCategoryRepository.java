@@ -1,6 +1,6 @@
-package com.asan.cms.repository;
+package ir.isc.cif.repository;
 
-import ir.isc.cif.repository.to.ProductCategory;
+import ir.isc.cif.to.ProductCategory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

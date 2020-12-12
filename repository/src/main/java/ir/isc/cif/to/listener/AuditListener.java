@@ -1,7 +1,7 @@
-package ir.isc.cif.repository.to.listener;
+package ir.isc.cif.to.listener;
 
-import ir.isc.cif.repository.to.base.Audit;
-import ir.isc.cif.repository.to.base.Auditable;
+import ir.isc.cif.to.base.Audit;
+import ir.isc.cif.to.base.Auditable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -21,7 +21,7 @@
         <module>common</module>
         <module>repository</module>
         <module>api</module>
-<!--        <module>service</module>-->
+        <module>service</module>
 <!--        <module>restful</module>-->
 <!--        <module>ui</module>-->
 <!--        <module>batch</module>-->

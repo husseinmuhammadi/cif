@@ -1,4 +1,4 @@
-package ir.isc.cif.repository.to.base;
+package ir.isc.cif.to.base;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;

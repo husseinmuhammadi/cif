@@ -1,6 +1,6 @@
 package ir.isc.cif.repository;
 
-import ir.isc.cif.repository.to.User;
+import ir.isc.cif.to.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,8 +1,8 @@
-package ir.isc.cif.repository.to;
+package ir.isc.cif.to;
 
-import ir.isc.cif.repository.to.base.Audit;
-import ir.isc.cif.repository.to.base.Auditable;
-import ir.isc.cif.repository.to.listener.AuditListener;
+import ir.isc.cif.to.base.Audit;
+import ir.isc.cif.to.base.Auditable;
+import ir.isc.cif.to.listener.AuditListener;
 
 import javax.persistence.*;
 
