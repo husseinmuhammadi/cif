@@ -1,9 +1,8 @@
 package ir.isc.cif.service;
 
+import ir.isc.cif.dto.security.Principal;
 import ir.isc.cif.repository.UserRepository;
 import ir.isc.cif.to.User;
-import ir.isc.cif.type.Principal;
-import ir.isc.cif.util.JsonUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,14 +33,12 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         User user = repository.findByUsername(username);
         if (user == null)
             throw new UsernameNotFoundException(username);
-        LOGGER.info(JsonUtil.jsonObject(user));
         Set<GrantedAuthority> grantedAuthorities = user.getRoles()
                 .stream()
                 .map(role -> {
                     Assert.isTrue(!role.getName().startsWith("ROLE_"), () -> role + " cannot start with ROLE_ (it is automatically added)");
                     return new SimpleGrantedAuthority("ROLE_" + role.getName());
                 }).collect(Collectors.toSet());
-        LOGGER.info(JsonUtil.jsonObject(grantedAuthorities));
         Principal principal = new Principal(user.getUsername(), user.getPassword(), grantedAuthorities);
         principal.setEmail(user.getEmail());
         return principal;
