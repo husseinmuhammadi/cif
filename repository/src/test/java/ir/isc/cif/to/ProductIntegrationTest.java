@@ -1,4 +1,4 @@
-package ir.isc.cif.repository.to;
+package ir.isc.cif.to;
 
 import ir.isc.cif.to.Product;
 import org.assertj.core.api.Assertions;

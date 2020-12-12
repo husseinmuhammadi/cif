@@ -1,4 +1,4 @@
-package ir.isc.cif.repository.to;
+package ir.isc.cif.to;
 
 import ir.isc.cif.common.CifNumber;
 import ir.isc.cif.to.CustomerInformationFile;
@@ -22,7 +22,7 @@ class CustomerInformationFileIntegrationTest {
     @Autowired
     private EntityManager entityManager;
 
-    @Test
+    // @Test
     void name() {
         entityManager.persist(new CustomerInformationFile(CifNumber.randomCifNumber()));
     }

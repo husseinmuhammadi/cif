@@ -1,4 +1,4 @@
-package ir.isc.cif.repository;
+package ir.isc.cif;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
