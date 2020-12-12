@@ -1,23 +1,23 @@
 package ir.isc.cif.dto;
 
-import ir.isc.cif.dto.base.Audit;
+import ir.isc.cif.dto.base.AuditDto;
 
 public abstract class EntityBase {
 
     private Long id;
 
-    private final Audit audit;
+    private final AuditDto audit;
 
-    private EntityBase(Audit audit) {
+    private EntityBase(AuditDto audit) {
         this.audit = audit;
     }
 
     EntityBase() {
-        this(new Audit());
+        this(new AuditDto());
     }
 
     public EntityBase(Long id) {
-        this(new Audit());
+        this(new AuditDto());
         this.id = id;
     }
 
@@ -29,7 +29,7 @@ public abstract class EntityBase {
         this.id = id;
     }
 
-    public Audit getAudit() {
+    public AuditDto getAudit() {
         return audit;
     }
 }

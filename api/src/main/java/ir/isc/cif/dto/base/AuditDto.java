@@ -2,7 +2,7 @@ package ir.isc.cif.dto.base;
 
 import java.util.Date;
 
-public class Audit {
+public class AuditDto {
 
     private Date createdOn;
 

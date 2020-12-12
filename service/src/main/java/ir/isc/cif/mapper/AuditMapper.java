@@ -1,5 +1,7 @@
 package ir.isc.cif.mapper;
 
+import ir.isc.cif.dto.base.AuditDto;
+import ir.isc.cif.to.base.Audit;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
@@ -9,8 +11,8 @@ public interface AuditMapper {
 
     AuditMapper MAPPER = Mappers.getMapper(AuditMapper.class);
 
-    ir.isc.cif.to.base.Audit toAudit(ir.isc.cif.dto.base.Audit audit);
+    Audit toAudit(AuditDto audit);
 
     @InheritInverseConfiguration
-    ir.isc.cif.dto.base.Audit fromAudit(ir.isc.cif.to.base.Audit audit);
+    AuditDto fromAudit(Audit audit);
 }
