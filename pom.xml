@@ -19,12 +19,12 @@
     <modules>
         <module>logger</module>
         <module>common</module>
-        <module>repository</module>
-        <module>api</module>
-        <module>service</module>
+<!--        <module>repository</module>-->
+<!--        <module>api</module>-->
+<!--        <module>service</module>-->
 <!--        <module>restful</module>-->
-<!--        <module>ui</module>-->
-<!--        <module>batch</module>-->
+        <module>ui</module>
+        <module>batch</module>
     </modules>
 
     <properties>
