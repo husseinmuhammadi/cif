@@ -36,11 +36,11 @@ A CIF often contains personally identifiable information (PII). This can include
 ## About This Project
 This project expose a number of rest apis using spring-boot and uses spring-batch as its job
 It is a multi module project as listed below:
-- web : represnt a restful apis
-- api : represnt an loosely coupled apis to provide a services based on Spring IoC and abstraction of implementing services 
-- service : provide a required services for project 
-- repository : provide a repository layer using JPA
-- batch : Jobs using on Spring Batch
+- **web** : represnt a restful apis
+- **api** : represnt an loosely coupled apis to provide a services based on Spring IoC and abstraction of implementing services 
+- **service** : provide a required services for project 
+- **repository** : provide a repository layer using JPA
+- **batch** : Jobs using on Spring Batch
 
 ### Configuring database 
 This project uses mariadb as its underlying database  
