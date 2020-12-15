@@ -43,8 +43,8 @@ It is a multi module project as listed below:
 - batch  
 
 ### Configuring database 
-This project uses mariadb as its underlying database
-
+This project uses mariadb as its underlying database  
+Download and install mariadb 
 #### CREATE USER
 ````
 $mysql -u root -p
@@ -57,3 +57,8 @@ SHOW GRANTS FOR cifdb@localhost;
 CREATE USER cifdb@'%' IDENTIFIED BY '123456';
 GRANT ALL PRIVILEGES ON cifdb.* TO cif_user@'%';
 ````
+
+For quick setup and installation of database you can use command below:
+```
+docker run -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=cifdb -e MYSQL_USER=cif_user -e MYSQL_PASSWORD=123456 mariadb
+```
