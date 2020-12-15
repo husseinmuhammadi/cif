@@ -1,4 +1,4 @@
-package ir.isc.cif.common;
+package ir.isc.cif.utils;
 
 import org.apache.commons.lang3.RandomStringUtils;
 

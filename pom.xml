@@ -17,8 +17,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>logger</module>
-        <module>common</module>
         <module>repository</module>
         <module>api</module>
         <module>service</module>
@@ -58,21 +56,6 @@
         </plugins>
     </build>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>ir.isc.cif</groupId>
-                <artifactId>logger</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>ir.isc.cif</groupId>
-                <artifactId>cif-common</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -85,14 +68,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ir.isc.cif</groupId>
-            <artifactId>logger</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ir.isc.cif</groupId>
-            <artifactId>cif-common</artifactId>
         </dependency>
     </dependencies>
 </project>
