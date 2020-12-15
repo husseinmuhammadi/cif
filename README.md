@@ -34,4 +34,26 @@ Service providers also maintain CIFs for the purpose of future marketing. This c
 A CIF often contains personally identifiable information (PII). This can include the customer’s name, address, and phone number for the purposes of fulfilling purchases. A CIF can also include a person's birth date and Social Security number, which is more often required in banking or in circumstances in which credit is relevant. Further information, such as race and gender, may also be included in the information is available.
 
 ## About This Project
+This project expose a number of rest apis using spring-boot and uses spring-batch as its job
+It is a multi module project as listed below:
+- web
+- api
+- service
+- repository
+- batch  
 
+### Configuring database 
+This project uses mariadb as its underlying database
+
+#### CREATE USER
+````
+$mysql -u root -p
+CREATE DATABASE cifdb;
+CREATE USER cif_user@localhost IDENTIFIED BY '123456';
+SELECT user, host FROM mysql.user;
+GRANT ALL PRIVILEGES ON cifdb.* TO cif_user@localhost;
+SHOW GRANTS FOR cifdb@localhost;
+
+CREATE USER cifdb@'%' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON cifdb.* TO cif_user@'%';
+````
