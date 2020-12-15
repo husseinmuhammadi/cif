@@ -1,19 +1,27 @@
 package ir.isc.cif.web.controller;
 
 import ir.isc.cif.api.CifService;
-import ir.isc.cif.dto.CustomerInformationFileDto;
+import ir.isc.cif.dto.CustomerInformationFile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController("/api/v1/cifs")
+@CrossOrigin
+@RestController
+@RequestMapping("/api/v1/cifs")
 public class CifController {
     @Autowired
     CifService service;
 
-    public ResponseEntity<List<CustomerInformationFileDto>> findAll() {
+    @GetMapping
+    public ResponseEntity<List<CustomerInformationFile>> findAll() {
         return ResponseEntity.ok(service.findAll());
+    }
+
+    @PostMapping
+    public ResponseEntity<CustomerInformationFile> save(@RequestBody CustomerInformationFile cif) {
+        return ResponseEntity.ok(service.save(cif));
     }
 }

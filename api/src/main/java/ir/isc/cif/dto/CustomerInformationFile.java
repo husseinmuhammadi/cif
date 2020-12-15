@@ -1,10 +1,10 @@
 package ir.isc.cif.dto;
 
-public class CustomerInformationFileDto extends EntityBase {
-    public CustomerInformationFileDto() {
+public class CustomerInformationFile extends EntityBase {
+    public CustomerInformationFile() {
     }
 
-    public CustomerInformationFileDto(String cifNumber) {
+    public CustomerInformationFile(String cifNumber) {
         this.cifNumber = cifNumber;
     }
 

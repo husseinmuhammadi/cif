@@ -1,9 +1,11 @@
 package ir.isc.cif.api;
 
-import ir.isc.cif.dto.CustomerInformationFileDto;
+import ir.isc.cif.dto.CustomerInformationFile;
 
 import java.util.List;
 
 public interface CifService {
-    List<CustomerInformationFileDto> findAll();
+    List<CustomerInformationFile> findAll();
+
+    CustomerInformationFile save(CustomerInformationFile cif);
 }

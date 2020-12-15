@@ -1,14 +1,12 @@
 package ir.isc.cif.to;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "CIF", uniqueConstraints = {
         @UniqueConstraint(name = "UQ_CIF_NO", columnNames = {"CIF_NO"})
 })
+@SequenceGenerator(name = "SEQUENCE_GENERATOR", sequenceName = "CIF_SEQ")
 public class CustomerInformationFile extends EntityBase {
 
     public CustomerInformationFile() {
