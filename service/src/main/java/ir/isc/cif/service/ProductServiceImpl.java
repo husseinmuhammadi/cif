@@ -2,9 +2,6 @@ package ir.isc.cif.service;
 
 import ir.isc.cif.api.ProductService;
 import ir.isc.cif.dto.Product;
-import ir.isc.cif.dto.ProductCategory;
-import ir.isc.cif.mapper.CycleAvoidingMappingContext;
-import ir.isc.cif.mapper.ProductCategoryMapper;
 import ir.isc.cif.mapper.ProductMapper;
 import ir.isc.cif.repository.ProductRepository;
 import org.slf4j.Logger;
@@ -27,9 +24,6 @@ public class ProductServiceImpl implements ProductService {
     private ProductMapper mapper;
 
     @Autowired
-    private ProductCategoryMapper productCategoryMapper;
-
-    @Autowired
     ProductRepository repository;
 
     @Override
@@ -47,20 +41,6 @@ public class ProductServiceImpl implements ProductService {
     public Page<Product> findAll(Pageable pageable) {
         Converter<ir.isc.cif.to.Product, ir.isc.cif.dto.Product> converter = product -> mapper.fromProduct(product);
         return repository.findAll(pageable).map(converter::convert);
-    }
-
-    @Override
-    public Page<Product> findAllByCategory(ProductCategory productCategory, Pageable pageable) {
-        Converter<ir.isc.cif.to.Product, ir.isc.cif.dto.Product> converter = product -> mapper.fromProduct(product);
-        return repository.findAllByCategory(productCategoryMapper.toProductCategory(productCategory, new CycleAvoidingMappingContext()), pageable).map(converter::convert);
-    }
-
-    @Override
-    public List<Product> findAllByCategory(ProductCategory productCategory) {
-        Converter<ir.isc.cif.to.Product, ir.isc.cif.dto.Product> converter = product -> mapper.fromProduct(product);
-        return repository.findAllByCategory(productCategoryMapper.toProductCategory(productCategory, new CycleAvoidingMappingContext()))
-                .stream().map(converter::convert)
-                .collect(Collectors.toList());
     }
 
     @Override

@@ -1,4 +1,4 @@
-package ir.isc.cif.controller;
+package ir.isc.cif.web.controller;
 
 import ir.isc.cif.api.CifService;
 import ir.isc.cif.dto.CustomerInformationFileDto;

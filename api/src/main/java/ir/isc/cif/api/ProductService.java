@@ -1,7 +1,6 @@
 package ir.isc.cif.api;
 
 import ir.isc.cif.dto.Product;
-import ir.isc.cif.dto.ProductCategory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -14,10 +13,6 @@ public interface ProductService {
     List<Product> findAll();
 
     Page<Product> findAll(Pageable pageable);
-
-    Page<Product> findAllByCategory(ProductCategory productCategory, Pageable pageable);
-
-    List<Product> findAllByCategory(ProductCategory productCategory);
 
     void delete(Long id);
 

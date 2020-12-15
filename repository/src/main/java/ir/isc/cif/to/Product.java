@@ -13,10 +13,6 @@ public class Product extends EntityBase {
     @Column(name = "AMOUNT")
     private Double amount;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "category_id", foreignKey = @ForeignKey(name = "FK_PRODUCT_CATEGORY_PRODUCT"))
-    private ProductCategory category;
-
     public String getName() {
         return name;
     }
@@ -31,13 +27,5 @@ public class Product extends EntityBase {
 
     public void setAmount(Double amount) {
         this.amount = amount;
-    }
-
-    public ProductCategory getCategory() {
-        return category;
-    }
-
-    public void setCategory(ProductCategory category) {
-        this.category = category;
     }
 }

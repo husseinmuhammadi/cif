@@ -9,8 +9,6 @@ import org.mapstruct.factory.Mappers;
 @Mapper(componentModel = "spring")
 public interface AuditMapper {
 
-    AuditMapper MAPPER = Mappers.getMapper(AuditMapper.class);
-
     Audit toAudit(AuditDto audit);
 
     @InheritInverseConfiguration

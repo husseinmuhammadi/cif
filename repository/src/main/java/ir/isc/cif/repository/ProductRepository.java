@@ -1,7 +1,6 @@
 package ir.isc.cif.repository;
 
 import ir.isc.cif.to.Product;
-import ir.isc.cif.to.ProductCategory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -15,10 +14,6 @@ public interface ProductRepository extends JpaRepository<Product, Long>, JpaSpec
     Product findByName(String name);
 
     Page<Product> findAll(Pageable pageable);
-
-    Page<Product> findAllByCategory(ProductCategory productCategory, Pageable pageable);
-
-    List<Product> findAllByCategory(ProductCategory productCategory);
 
     List<Product> findByName(String name, Pageable pageable);
 }

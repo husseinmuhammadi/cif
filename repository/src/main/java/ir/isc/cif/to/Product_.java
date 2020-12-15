@@ -7,5 +7,4 @@ import javax.persistence.metamodel.StaticMetamodel;
 public class Product_ {
     public static volatile SingularAttribute<Product, String> name;
     public static volatile SingularAttribute<Product, Double> amount;
-    public static volatile SingularAttribute<Product, ProductCategory> category;
 }
