@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 
-@SpringBootTest
+@SpringBootApplication
 public class TestApplication {
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(TestApplication.class, args);
